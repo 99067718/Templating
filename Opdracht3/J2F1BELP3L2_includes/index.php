@@ -15,11 +15,10 @@
 
 
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
-  <?php
+    <?php
   if ($_GET != null && $_GET != ""){
     include("pages/".$_GET['page']);
   }
-  
   ?>
 	
 	<!-- laad hier via php je footer in (vanuit je includes map)-->
