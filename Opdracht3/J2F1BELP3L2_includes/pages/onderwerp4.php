@@ -2,7 +2,7 @@
 ?>
 <!-- jouw HTML met de inhoud over onderwerp 3 komt hier... -->
 <div>
-    <h1>Re Zero</h1>
+    <h1>Re:Zero</h1>
     <img src="images/re-zero.jpg" class="subjectImage">
     <p class="information">Re:Zero − Starting Life in Another World (Japanese: Re:ゼロから始める異世界生活, Hepburn: Re:Zero kara Hajimeru Isekai Seikatsu), often referred to simply as Re:Zero and also known as Re: Life in a different world from zero,[d] is a Japanese light novel series written by Tappei Nagatsuki and illustrated by Shin'ichirō Ōtsuka. The story centers on Subaru Natsuki, a hikikomori who suddenly finds himself transported to another world on his way home from the convenience store. The series was initially serialized on the website Shōsetsuka ni Narō from 2012 onwards. Thirty-two light novels, as well as five side story volumes and eight short story collections have been published by Media Factory under their MF Bunko J imprint.
 
