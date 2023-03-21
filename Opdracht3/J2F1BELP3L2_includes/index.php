@@ -20,10 +20,13 @@
     {
         throw new ErrorException( $err_msg, 0, $err_severity, $err_file, $err_line );
     }, E_WARNING);
-    
+
     try{
       if ($_GET != null && $_GET != ""){
         include("pages/".$_GET['page']);
+      }
+      else{
+        include("pages/home.php");
       }
     }
     catch(Exception $e)
