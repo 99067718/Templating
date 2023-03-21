@@ -16,9 +16,22 @@
 
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
     <?php
-  if ($_GET != null && $_GET != ""){
-    include("pages/".$_GET['page']);
-  }
+    set_error_handler(function ($err_severity, $err_msg, $err_file, $err_line, array $err_context)
+    {
+        throw new ErrorException( $err_msg, 0, $err_severity, $err_file, $err_line );
+    }, E_WARNING);
+    
+    try{
+      if ($_GET != null && $_GET != ""){
+        include("pages/".$_GET['page']);
+      }
+    }
+    catch(Exception $e)
+    {
+      include("pages/pageNotFound.php");
+    }
+    restore_error_handler();
+  
   ?>
 	
 	<!-- laad hier via php je footer in (vanuit je includes map)-->
